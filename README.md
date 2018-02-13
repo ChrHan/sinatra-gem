@@ -56,6 +56,3 @@ An `SQLite3` Database needs to be created, named as `database.db`
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/ChrHan/ruby-sinatra-gem.
 
-## Known Issues
-
-Select is not working; returned `HTTP 500` with error `cannot use a closed statement`

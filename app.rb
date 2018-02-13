@@ -14,7 +14,8 @@ get '/' do
 end
 
 get '/select' do
-  DatabaseWrapper.select
+	@result = DatabaseWrapper.select  
+  erb :select
 end
 
 get '/insert' do
