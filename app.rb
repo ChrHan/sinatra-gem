@@ -14,7 +14,9 @@ get '/' do
 end
 
 get '/select' do
-	@result = DatabaseWrapper.select  
+  #db = DatabaseWrapper.new
+  #db.select
+	@result = DatabaseWrapper.select
   erb :select
 end
 
@@ -35,3 +37,6 @@ get '/delete' do
   DatabaseWrapper.delete(id)
 end
 
+get '/selectcount' do
+  DatabaseWrapper.execute('select count(1) from products').to_s
+end
