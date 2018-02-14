@@ -14,9 +14,9 @@ get '/' do
 end
 
 get '/select' do
-  #db = DatabaseWrapper.new
-  #db.select
-	@result = DatabaseWrapper.select
+  db = DatabaseWrapper.new
+  @result = db.select
+	#@result = DatabaseWrapper.select
   erb :select
 end
 
