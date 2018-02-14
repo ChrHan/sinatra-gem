@@ -16,7 +16,6 @@ end
 get '/select' do
   db = DatabaseWrapper.new
   @result = db.select
-	#@result = DatabaseWrapper.select
   erb :select
 end
 
