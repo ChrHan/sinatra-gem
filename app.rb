@@ -22,20 +22,25 @@ end
 get '/insert' do
 	id = params[:id]
 	product_name = params[:product_name]
-  DatabaseWrapper.insert(id, product_name)
+  db = DatabaseWrapper.new
+  db.insert(id, product_name)
 end
 
 get '/update' do
 	id = params[:id]
 	product_name = params[:product_name]
-  DatabaseWrapper.update(id, product_name)
+  db = DatabaseWrapper.new
+  db.update(id, product_name)
 end
 
 get '/delete' do
 	id = params[:id]
-  DatabaseWrapper.delete(id)
+  db = DatabaseWrapper.new
+  db.delete(id)
 end
 
 get '/selectcount' do
-  DatabaseWrapper.execute('select count(1) from products').to_s
+  db = DatabaseWrapper.new
+  @result = db.execute("select count(1) from products")
+  erb :select_count
 end

@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/ChrHan/ruby-database-wrapper.git
-  revision: 787f7b7183c445750d39f36df19f1b09a8692fa9
+  revision: b0a7be39db9297b0dd697949e641fd14e07b1e9a
   branch: fix-select
   specs:
-    database_wrapper (0.1.2)
+    database_wrapper (0.1.4)
       sqlite3 (~> 1.3)
 
 GEM
@@ -19,6 +19,7 @@ GEM
     byebug (10.0.0)
     coderay (1.1.2)
     debug_inspector (0.0.3)
+    diff-lcs (1.3)
     erubi (1.7.0)
     method_source (0.9.0)
     multi_json (1.13.1)
@@ -32,6 +33,21 @@ GEM
     rack (2.0.4)
     rack-protection (2.0.0)
       rack
+    rack-test (0.8.2)
+      rack (>= 1.0, < 3)
+    rspec (3.7.0)
+      rspec-core (~> 3.7.0)
+      rspec-expectations (~> 3.7.0)
+      rspec-mocks (~> 3.7.0)
+    rspec-core (3.7.1)
+      rspec-support (~> 3.7.0)
+    rspec-expectations (3.7.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.7.0)
+    rspec-mocks (3.7.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.7.0)
+    rspec-support (3.7.1)
     sinatra (2.0.0)
       mustermann (~> 1.0)
       rack (~> 2.0)
@@ -55,6 +71,8 @@ DEPENDENCIES
   binding_of_caller
   database_wrapper!
   pry-byebug
+  rack-test
+  rspec
   sinatra
   sinatra-contrib
 
