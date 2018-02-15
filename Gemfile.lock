@@ -1,7 +1,6 @@
 GIT
   remote: https://github.com/ChrHan/ruby-database-wrapper.git
-  revision: b0a7be39db9297b0dd697949e641fd14e07b1e9a
-  branch: fix-select
+  revision: a7fe74e454ef24b4016cda1f1ecebaeade543e7c
   specs:
     database_wrapper (0.1.4)
       sqlite3 (~> 1.3)
