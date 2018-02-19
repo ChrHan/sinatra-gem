@@ -1,2 +1,8 @@
 # vim swap
 *.swp
+
+# sqlite3 db
+*.db
+
+# vendor related
+vendor/**/*
