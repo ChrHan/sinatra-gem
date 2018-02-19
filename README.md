@@ -16,7 +16,7 @@ gem 'database_wrapper'
 
 And then execute:
 
-    $ bundle
+    $ bundle install --path ./vendor
 
 Or install it yourself as:
 
@@ -35,7 +35,7 @@ An `SQLite3` Database needs to be created, named as `database.db`
 
 ### Using Gem
 
-    gem install database_wrapper-0.1.0.gem
+    gem install database_wrapper-0.1.5.gem
 
     irb
     > require 'database_wrapper'
